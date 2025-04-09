@@ -104,10 +104,10 @@ config.colors = {
 	},
 }
 --Appearance
-config.window_background_opacity = 0.2
+config.window_background_opacity = 0.4
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
--- config.window_background_image = "c:/Users/AMD/.config/wezterm/assets/dark-morphism.jpg"
+config.window_background_image = "c:/Users/AMD/.config/wezterm/assets/the-nun.png"
 config.window_padding = { left = 2, right = 2, top = 2, bottom = 2 }
 
 -- Miscellaneous settings
