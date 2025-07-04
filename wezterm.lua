@@ -11,8 +11,8 @@ config.default_prog = {
 
 -- Fonts
 -- config.color_scheme = "Tokyo Night Storm"
--- config.color_scheme = "Chalk (Gogh)"
-config.color_scheme = "Afterglow"
+-- config.color_scheme = "Afterglow"
+config.color_scheme = "Chalk (Gogh)"
 -- config.color_scheme = "City Streets (terminal.sexy)"
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
 config.font_size = 12.0
@@ -40,7 +40,7 @@ config.inactive_pane_hsb = {
 }
 
 --Appearance
-config.window_background_opacity = 0.95
+config.window_background_opacity = 0.97
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 
