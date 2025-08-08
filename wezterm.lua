@@ -2,20 +2,26 @@ local wezterm = require("wezterm")
 -- local constant = require("constant")
 -- local commands = require("commands")
 local config = wezterm.config_builder()
+-- local is_windows = wezterm.target_triple == "x86_64-pc-windows-msvc"
 
 config.default_prog = {
 	"wsl.exe",
 	"--distribution",
 	"Ubuntu",
+	"--exec",
+	"/home/mikmikinmoko/.wsl-wezterm-launch.sh",
 }
 
--- Fonts
+-- Color Schme
+-- config.color_scheme = "Apprentice (base16)" -- Choices
+config.color_scheme = "Ashes (base16)" -- Choices
+-- config.color_scheme = "Afterglow" -- Choices
+
+-- config.color_scheme = "Catppuccin Frappe" -- or Macchiato, Frappe, Latte
 -- config.color_scheme = "Tokyo Night Storm"
--- config.color_scheme = "Afterglow"
-config.color_scheme = "Chalk (Gogh)"
--- config.color_scheme = "City Streets (terminal.sexy)"
+--
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
-config.font_size = 12.0
+config.font_size = 11.0
 config.line_height = 1.2
 config.window_frame = {
 	active_titlebar_bg = "#333333",
@@ -40,7 +46,7 @@ config.inactive_pane_hsb = {
 }
 
 --Appearance
-config.window_background_opacity = 0.97
+config.window_background_opacity = 0.8
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 
