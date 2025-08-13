@@ -14,19 +14,21 @@ config.default_prog = {
 
 -- Color Schme
 -- config.color_scheme = "Apprentice (base16)" -- Choices
-config.color_scheme = "Ashes (base16)" -- Choices
+-- config.color_scheme = "Ashes (base16)" -- Choices
+config.color_scheme = "Abernathy" -- Choices
 -- config.color_scheme = "Afterglow" -- Choices
 
 -- config.color_scheme = "Catppuccin Frappe" -- or Macchiato, Frappe, Latte
 -- config.color_scheme = "Tokyo Night Storm"
 --
-config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
+config.font = wezterm.font("JetBrains Mono", { stretch = "Normal", weight = "DemiBold" })
 config.font_size = 11.0
 config.line_height = 1.2
 config.window_frame = {
 	active_titlebar_bg = "#333333",
 	inactive_titlebar_bg = "#222222",
 }
+config.animation_fps = 144
 
 -- Colors
 config.colors = {
@@ -46,15 +48,16 @@ config.inactive_pane_hsb = {
 }
 
 --Appearance
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.7
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
+config.audible_bell = "Disabled"
 
 -- config.window_background_image = constant.image
 config.window_padding = { left = 2, right = 2, top = 2, bottom = 2 }
 
 -- Miscellaneous settings
-config.max_fps = 120
+config.max_fps = 144
 config.prefer_egl = true
 
 -- Commands
